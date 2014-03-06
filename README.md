@@ -42,3 +42,5 @@ Baseado neste exemplo:
 **Passo 10:** [contador de tarefas no rodapé](https://github.com/railslab/tarefas/commit/83f04a74d196c4f629c371b9abef09b24d5fb7de)
 
 **Passo 11:** [colocar classe completed se a tarefa estiver concluida](https://github.com/railslab/tarefas/commit/a335c753f43a9f0a96f97f54535a45ce765d9f58)
+
+**Passo 12:** Criar [rota customizada](https://github.com/railslab/tarefas/commit/8bcee399ec8da0da77aa7a846cdf2cd109358224) para exibir as tarefas ativas
