@@ -44,3 +44,5 @@ Baseado neste exemplo:
 **Passo 11:** [colocar classe completed se a tarefa estiver concluida](https://github.com/railslab/tarefas/commit/a335c753f43a9f0a96f97f54535a45ce765d9f58)
 
 **Passo 12:** Criar [rota customizada](https://github.com/railslab/tarefas/commit/8bcee399ec8da0da77aa7a846cdf2cd109358224) para exibir as tarefas ativas
+
+**Passo 13:** [Selecionar link ativo da página atual](https://github.com/railslab/tarefas/commit/92497670945ef6421393f53595035ce2e84388ff)
