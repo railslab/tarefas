@@ -2,6 +2,7 @@ Tarefas::Application.routes.draw do
   resources :tarefas do
     collection do
       get 'ativas'
+      get 'concluidas'
     end
   end
 

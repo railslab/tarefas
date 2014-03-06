@@ -7,4 +7,9 @@ class TarefasController < ApplicationController
 		@tarefas = Tarefa.where concluida: false
 		render :index
 	end
+
+	def concluidas
+		@tarefas = Tarefa.where concluida: true
+		render :index
+	end
 end
