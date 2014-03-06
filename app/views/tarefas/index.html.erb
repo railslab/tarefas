@@ -16,7 +16,7 @@
     <ul id="todo-list">
       
       <% for tarefa in @tarefas %>
-      <li class="completed">
+      <li class="<%= 'completed' if tarefa.concluida? %>">
         <div class="view">
           <a href="#"
              class="toggle"
