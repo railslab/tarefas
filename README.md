@@ -5,9 +5,9 @@ Baseado neste exemplo:
 
 ## Passos
 
-**Passo 1:** entrar em sua pasta de projetos e fazer o clone do repositório:
+**Passo 1:** baixar o projeto inicial e descompactar:
 
-	git clone https://github.com/railslab/tarefas.git
+	https://github.com/railslab/tarefas/releases
 
 **Passo 2:** entrar na pasta do projeto e instalar as dependências:
 
