@@ -3,7 +3,7 @@ Tarefas::Application.routes.draw do
     collection do
       get 'ativas'
       get 'concluidas'
-      delete 'destroy_concluidas'
+      delete 'concluidas', action: 'destroy_concluidas'
     end
   end
 

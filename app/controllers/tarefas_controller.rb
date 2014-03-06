@@ -19,7 +19,7 @@ class TarefasController < ApplicationController
 	end
 
 	def destroy_concluidas
-		Tarefa.where(concluida: true).delete_all
+		Tarefa.delete_all concluida: true
 		redirect_to tarefas_path
 	end
 end
