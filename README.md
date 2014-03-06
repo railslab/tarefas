@@ -42,3 +42,5 @@ Baseado neste exemplo:
 **Passo 9:** [exibir o título da tarefa](https://github.com/railslab/tarefas/commit/6df7423101e755bee839ef5768c199831f09e4d5)
 
 **Passo 10:** [contador de tarefas no rodapé](https://github.com/railslab/tarefas/commit/83f04a74d196c4f629c371b9abef09b24d5fb7de)
+
+**Passo 11:** [colocar classe completed se a tarefa estiver concluida](https://github.com/railslab/tarefas/commit/a335c753f43a9f0a96f97f54535a45ce765d9f58)
