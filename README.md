@@ -36,3 +36,5 @@ Baseado neste exemplo:
 **Passo 7:** executar o seed para preencher o banco:
 
 	rake db:seed
+
+**Passo 8:** exibir lista de tarefas, baseado [neste exemplo](https://github.com/railslab/tarefas/commit/3bd785475cf51bf792eecf0b579d395e1f26c7b6)
