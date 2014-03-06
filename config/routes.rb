@@ -5,6 +5,10 @@ Tarefas::Application.routes.draw do
       get 'concluidas'
       delete 'concluidas', action: 'destroy_concluidas'
     end
+
+    member do
+      patch 'toggle'
+    end
   end
 
   root 'tarefas#index'

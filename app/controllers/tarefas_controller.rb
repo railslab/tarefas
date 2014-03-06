@@ -13,6 +13,11 @@ class TarefasController < ApplicationController
 		render :index
 	end
 
+	def toggle
+		Tarefa.find(params[:id]).toggle! :concluida
+		redirect_to tarefas_path
+	end
+
 	def destroy
 		Tarefa.delete params[:id]
 		redirect_to tarefas_path

@@ -18,7 +18,7 @@
       <% for tarefa in @tarefas %>
       <li class="<%= 'completed' if tarefa.concluida? %>">
         <div class="view">
-          <a href="#"
+          <a href="<%= toggle_tarefa_path tarefa %>"
              class="toggle"
              data-method="patch"></a>
 
