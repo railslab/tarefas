@@ -1,5 +1,10 @@
 Tarefas::Application.routes.draw do
-  resources :tarefas
+  resources :tarefas do
+    collection do
+      get 'ativas'
+    end
+  end
+
   root 'tarefas#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
