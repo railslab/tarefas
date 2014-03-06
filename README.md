@@ -5,9 +5,7 @@ Baseado neste exemplo:
 
 ## Passos
 
-**Passo 1:** baixar o projeto inicial e descompactar:
-
-	https://github.com/railslab/tarefas/releases
+**Passo 1:** baixar o [projeto inicial](https://github.com/railslab/tarefas/releases) e descompactar
 
 **Passo 2:** entrar na pasta do projeto e instalar as dependências:
 
