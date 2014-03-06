@@ -15,6 +15,7 @@
   <section id="main">
     <ul id="todo-list">
       
+      <% for tarefa in @tarefas %>
       <li class="completed">
         <div class="view">
           <a href="#"
@@ -29,6 +30,7 @@
              class="destroy"></a>
         </div>
       </li>
+      <% end %>
 
     </ul>
   </section>
