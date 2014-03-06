@@ -38,3 +38,7 @@ Baseado neste exemplo:
 	rake db:seed
 
 **Passo 8:** exibir lista de tarefas, baseado [neste exemplo](https://github.com/railslab/tarefas/commit/3bd785475cf51bf792eecf0b579d395e1f26c7b6)
+
+**Passo 9:** [exibir o título da tarefa](https://github.com/railslab/tarefas/commit/6df7423101e755bee839ef5768c199831f09e4d5)
+
+**Passo 10:** [contador de tarefas no rodapé](https://github.com/railslab/tarefas/commit/83f04a74d196c4f629c371b9abef09b24d5fb7de)
