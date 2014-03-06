@@ -17,4 +17,9 @@ class TarefasController < ApplicationController
 		Tarefa.delete params[:id]
 		redirect_to tarefas_path
 	end
+
+	def destroy_concluidas
+		Tarefa.where(concluida: true).delete_all
+		redirect_to tarefas_path
+	end
 end
