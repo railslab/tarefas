@@ -18,6 +18,11 @@ class TarefasController < ApplicationController
 		redirect_to tarefas_path
 	end
 
+	def create
+		Tarefa.create titulo: params[:tarefa]
+		redirect_to tarefas_path
+	end
+
 	def destroy
 		Tarefa.delete params[:id]
 		redirect_to tarefas_path
