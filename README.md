@@ -46,3 +46,5 @@ Baseado neste exemplo:
 **Passo 12:** Criar [rota customizada](https://github.com/railslab/tarefas/commit/8bcee399ec8da0da77aa7a846cdf2cd109358224) para exibir as tarefas ativas
 
 **Passo 13:** [Selecionar link ativo da página atual](https://github.com/railslab/tarefas/commit/92497670945ef6421393f53595035ce2e84388ff)
+
+**Passo 14:** [excluir tarefas](https://github.com/railslab/tarefas/commit/28027222b330bfd77c96057415baad1d7bc316d2)
