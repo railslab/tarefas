@@ -42,21 +42,21 @@
     
     <ul id="filters">
       <li>
-        <a class="selected"
+        <a class="<%= 'selected' if action_name == 'index' %>"
            href="<%= tarefas_path %>">
               Todas
         </a>
       </li>
 
       <li>
-        <a class=""
+        <a class="<%= 'selected' if action_name == 'ativas' %>"
             href="<%= ativas_tarefas_path %>">
               Ativas
         </a>
       </li>
 
       <li>
-        <a class=""
+        <a class="<%= 'selected' if action_name == 'concluidas' %>"
            href="<%= concluidas_tarefas_path %>">
               Concluídas
         </a>
