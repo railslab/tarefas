@@ -12,4 +12,9 @@ class TarefasController < ApplicationController
 		@tarefas = Tarefa.where concluida: true
 		render :index
 	end
+
+	def destroy
+		Tarefa.delete params[:id]
+		redirect_to tarefas_path
+	end
 end
