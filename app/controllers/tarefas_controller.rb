@@ -25,7 +25,8 @@ class TarefasController < ApplicationController
 	end
 
 	def edit
-		index
+		@tarefas = Tarefa.all
+		count_tarefas_concluidas
 		render :index
 	end
 
