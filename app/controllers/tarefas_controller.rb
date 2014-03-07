@@ -21,8 +21,18 @@ class TarefasController < ApplicationController
 		redirect_to tarefas_path
 	end
 
+	def edit
+		index
+		render :index
+	end
+
 	def create
 		Tarefa.create titulo: params[:tarefa]
+		redirect_to tarefas_path
+	end
+
+	def update
+		Tarefa.update params[:id], titulo: params[:titulo]
 		redirect_to tarefas_path
 	end
 

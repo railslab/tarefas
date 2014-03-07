@@ -16,19 +16,27 @@
     <ul id="todo-list">
       
       <% for tarefa in @tarefas %>
-      <li class="<%= 'completed' if tarefa.concluida? %>">
-        <div class="view">
+      <li class="<%= 'editing' if action_name == 'edit' && tarefa.id == params[:id].to_i %>">
+        <div class="view <%= 'completed' if tarefa.concluida? %>">
           <a href="<%= toggle_tarefa_path tarefa %>"
              class="toggle"
              data-method="patch"></a>
 
-          <label><%= tarefa.titulo %></label>
+          <label>
+            <a href="<%= edit_tarefa_path tarefa %>">
+              <%= tarefa.titulo %>
+            </a>
+          </label>
 
           <a href="<%= tarefa_path tarefa %>" 
              data-method="delete"
              data-confirm="Tem Certeza?"
              class="destroy"></a>
         </div>
+
+        <%= form_for tarefa do %>
+          <input class="edit" name="titulo" value="<%= tarefa.titulo %>" autofocus>
+        <% end %>
       </li>
       <% end %>
 

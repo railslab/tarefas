@@ -233,7 +233,7 @@ label[for='toggle-all'] {
 	text-shadow: 0 -1px 0 #bfbfbf;
 }
 
-#todo-list li.completed .toggle:after {
+#todo-list .completed .toggle:after {
 	color: #85ada7;
 	text-shadow: 0 1px 0 #669991;
 	bottom: 1px;
@@ -241,7 +241,6 @@ label[for='toggle-all'] {
 }
 
 #todo-list li label {
-	white-space: pre;
 	word-break: break-word;
 	padding: 15px 60px 15px 15px;
 	margin-left: 45px;
@@ -251,7 +250,12 @@ label[for='toggle-all'] {
 	transition: color 0.4s;
 }
 
-#todo-list li.completed label {
+#todo-list li label a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#todo-list .completed label {
 	color: #a9a9a9;
 	text-decoration: line-through;
 }
