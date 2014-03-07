@@ -6,11 +6,13 @@ class TarefasController < ApplicationController
 
 	def ativas
 		@tarefas = Tarefa.where concluida: false
+		@tarefas_concluidas_count = Tarefa.where(concluida: true).count
 		render :index
 	end
 
 	def concluidas
 		@tarefas = Tarefa.where concluida: true
+		@tarefas_concluidas_count = Tarefa.where(concluida: true).count
 		render :index
 	end
 
