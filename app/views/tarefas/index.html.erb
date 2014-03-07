@@ -37,7 +37,7 @@
   
   <footer id="footer">
     <span id="todo-count">
-      <%= @tarefas.count %> tarefas
+      <%= pluralize @tarefas.count, 'tarefa' %>
     </span>
     
     <ul id="filters">
@@ -71,6 +71,6 @@
           Excluir Tarefas Concluídas (<%= @tarefas_concluidas_count %>)
     </a>
     <% end %>
-    
+
   </footer>
 </section>
