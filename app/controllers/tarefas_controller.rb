@@ -1,7 +1,10 @@
 class TarefasController < ApplicationController
+	respond_to :html, :json, :xml
+
 	def index
 		@tarefas = Tarefa.all
 		count_tarefas_concluidas
+		respond_with @tarefas
 	end
 
 	def ativas
