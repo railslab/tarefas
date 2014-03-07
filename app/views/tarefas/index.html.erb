@@ -63,11 +63,14 @@
       </li>
     </ul>
 
+    <% unless @tarefas_concluidas_count.zero? %>
     <a id="clear-completed"
        href="<%= concluidas_tarefas_path %>"
        data-method="delete"
        data-confirm="Tem Certeza?">
-          Excluir Tarefas Concluídas
+          Excluir Tarefas Concluídas (<%= @tarefas_concluidas_count %>)
     </a>
+    <% end %>
+    
   </footer>
 </section>

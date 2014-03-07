@@ -1,6 +1,7 @@
 class TarefasController < ApplicationController
 	def index
 		@tarefas = Tarefa.all
+		@tarefas_concluidas_count = Tarefa.where(concluida: true).count
 	end
 
 	def ativas
