@@ -1,21 +1,19 @@
 class TarefasController < ApplicationController
 	respond_to :html, :json, :xml
+	before_action :count_tarefas_concluidas, only: [:index, :ativas, :concluidas]
 
 	def index
 		@tarefas = Tarefa.all
-		count_tarefas_concluidas
 		respond_with @tarefas
 	end
 
 	def ativas
 		@tarefas = Tarefa.ativas
-		count_tarefas_concluidas
 		render :index
 	end
 
 	def concluidas
 		@tarefas = Tarefa.concluidas
-		count_tarefas_concluidas
 		render :index
 	end
 
